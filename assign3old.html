@@ -1,0 +1,217 @@
+<html> 
+  <head> 
+<style> 
+body {
+        align-content: center;  
+        background-color: #ffb8b8;
+        color: white;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        display:grid;
+       
+
+        text-align: center;
+         font-size: 50px;
+
+         grid-template-columns: 1fr 1fr 1fr;
+         grid-template-rows: 50px 50px 1fr 1fr 1fr 1fr 50px;
+         gap: 10px;
+
+         height: 80vh;
+         width: 80vw;
+
+       }
+       
+         
+            
+         button {
+           width: 80%;
+           height: 80%;
+            font-size: 25px
+    
+         }
+
+         .displayButton {
+            background-color: #ffffff;
+
+         }
+
+       .title {
+          grid-row-start: 1;
+          grid-row-end: 2;
+          grid-column-start: 1;
+          grid-column-end: 3;
+          
+                   
+            font-size: 50px;
+          }
+
+        .secondSection {
+            grid-row-start: 2;
+          grid-row-end: 3;
+          grid-column-start: 1;
+          grid-column-end: 3;
+          
+          
+        }
+
+      .inputbutton {
+          grid-row-start: 3;
+          grid-row-end: 4;
+          grid-column-start: 1;
+          grid-column-end: 2;
+          }
+
+      .guessbutton {
+          grid-row-start: 3;
+          grid-row-end: 4;
+          grid-column-start: 2;
+          grid-column-end: 3;
+          }
+
+
+          .fourthSection {
+          grid-row-start: 4;
+          grid-row-end: 5;
+          grid-column-start: 1;
+          grid-column-end: 3;
+          }
+
+          .fifthSection {
+          grid-row-start: 5;
+          grid-row-end: 6;
+          grid-column-start: 1;
+          grid-column-end: 3;
+          }
+          
+         .exit {
+          grid-row-start: 6;
+          grid-row-end: 7;
+          grid-column-start: 1;
+          grid-column-end: 3;
+          }
+          
+
+</style>
+<script>
+
+
+var myFirstVariable = "i";
+var mySecondVariable = "0";
+
+
+
+
+
+
+  function guess() {
+
+            i = Number(document.getElementById("i"). value); 
+        if(i==30) document.getElementById("i").disabled = true; 
+        if(i==30) document.getElementById("guess").disabled = true; 
+        if(i==30) document.getElementById("reset").disabled = false;
+
+        if(i==30) document.getElementById("text").innerHTML = "Good job! You got it!"; 
+
+        if(i<=10 && b>0) document.getElementById("text").innerHTML = "Much too low";
+
+        if(i<=28 && b>10) document.getElementById("text").innerHTML = "You're getting closer!";
+
+        if(i<=88 && b>=60) document.getElementById("text").innerHTML = "Much too high";
+
+        if(i>=31 && b<60) document.getElementById("text").innerHTML = "Goodness, lower! "; 
+
+        if(i>89 && i<=100) document.getElementById("text").innerHTML = "MUCH too high!"; 
+
+      
+        mySecondVariable = mySecondVariable + 1;
+        document.GetElementById("text2").innerHTML= mySecondVariable;
+        myFirstVariable = Numberdocument.getElementbyID
+
+
+      
+  } 
+  
+  function numberOfGuesses() {
+    document.getElementbyId("text2").innerHTML = "Number of Guesses:" + mySecondvariable + <br> </br> + "Last Guess:" + number; 
+  
+  }
+
+
+  function reset()  {
+
+    if(i>100) document.getElementById("i").disabled = true;
+  }
+  function lastGuess() 
+  {
+    document.getElementById("text").innerHTML = i;
+  }
+  function numberOfGuesses() {
+
+    document.getElementbyId("text2").innerHTML = "Number of Guesses:" + mySecondVariable
+    <br> 
+    document.getElementbyId("text2").innerHTML = "Last Guess:" + myFirstVariable 
+   
+  }
+
+
+</script>
+
+
+
+  </head>
+  <div class = "secondSection"> 
+
+  <p> Guess a number 1-100! </p>
+  
+  </div>
+  <div class ="inputbutton"> 
+<button id="inputbutton" class="displayButton";> 
+<h3> Guess here: <input id="i"> </input> </h3>
+</div>
+
+<div class ="guessbutton" > 
+  <button id="guess" onclick="guess()";> 
+  <h2> Guess! </h2>
+</button>
+</div>
+
+  <div class ="fourthSection" >
+<p id="text"> </p>
+</div>
+
+<div class ="fifthSection" id="text2">
+ 
+  <h4> Number of Guesses:  
+    <br> <br> </h4>
+        <p > Last guess: 
+  </h4>
+  </div>
+
+ 
+      
+      </button>
+  </div>
+      
+      
+      
+    
+    </div>
+
+
+  </div>
+
+
+
+<body>
+
+
+
+
+
+
+</body>
+
+
+
+
+</html>
